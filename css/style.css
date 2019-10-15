@@ -1,0 +1,516 @@
+a, a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 1920px;
+}
+
+/*header*/
+header {
+    position: absolute;
+    width: 100%;
+    height: 800px;
+    left: 0;
+    top: 0;
+}
+
+.header-slider {
+    margin-top: 172px;
+}
+.header-top {
+    padding-top: 56px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-logo {
+    margin: auto;
+}
+
+.menu-logo img {
+    width: 201px;
+}
+.left-menu li {
+    margin-right: 45px;
+}
+
+.right-menu {
+    margin-left: auto;
+}
+
+.right-menu li {
+    margin-right: 35px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 3px;
+    position: relative;
+    transition: all .5s;
+}
+
+.burger-menu span:before,
+.burger-menu span:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    transition: all .5s;
+}
+
+
+.burger-menu span:after {
+    top: 10px;
+}
+
+.burger-menu.burger-open span {
+    background: transparent;
+}
+
+.burger-open span:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.burger-open span:after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.menu.menu-show {
+    display: block;
+}
+
+
+.purchase-item {
+    position: relative;
+    background: #D7B399;
+    width: 33px;
+    height: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+}
+
+.purchase-item:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 8.5px 13.7px 6.5px 0;
+    border-color: transparent #D7B399 transparent transparent;
+    right: 33px;
+}
+
+/*.figure:before {*/
+/*    content: "";*/
+/*    position: relative;*/
+/*    border: 3px solid transparent;*/
+/*    border-top: 5px solid #212121;*/
+/*    left: 107px;*/
+/*    top: 10px;*/
+/*}*/
+
+/*.main-logo {*/
+/*    text-transform: uppercase;*/
+/*    font-weight: bold;*/
+/*    font-size: 24px;*/
+/*}*/
+
+#section-slider {
+    padding: 150px 0;
+    background: #F9F6F1;;
+}
+
+.slide .sales {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-bottom: 35px;
+}
+
+.slide .discount {
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 67px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    width: 570px;
+    margin-bottom: 55px;
+}
+
+.slide img {
+    margin-top: -170px;
+    margin-bottom: 130px;
+}
+
+.owl-dots {
+    margin-bottom: -70px;
+}
+
+.button {
+    background: #D7B399;
+    width: 240px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    filter: sepia(50%);
+    transition: .2s;
+}
+
+.button a {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    margin: 0 25px;
+}
+
+.first-price {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-decoration-line: line-through;
+    color: #000000;
+}
+
+.discount-price {
+    font-weight: bold;
+    font-size: 42px;
+    letter-spacing: 0.02em;
+    color: #D84033;
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+    margin: 5px 7px;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    width: 40px;
+    height: 7px;
+    background: #CECECE;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #D7B399;
+}
+
+/*delivery*/
+
+.delivery {
+    width: 100%;
+    height: 235px;
+    background: #212121;
+    text-align: center;
+    padding-top: 1px;
+}
+
+.delivery h1 {
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-top: 80px;
+}
+
+.delivery h1 span {
+    font-weight: bold;
+}
+
+.delivery p {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/*collection*/
+#collection {
+    background: #F9F6F1;
+}
+
+.collection h3 {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #000000;
+    margin-top: 61px;
+}
+
+.collection span {
+    font-weight: 500;
+}
+
+.collection p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 25px;
+}
+
+.collection-image {
+    float: right;
+}
+
+.collection-image img {
+    margin: -145px 0 0 0;
+}
+
+.collection .button {
+    width: 80px;
+    height: 30px;
+    background: #D7B399;
+    margin-top: 40px;
+}
+
+.collection-items {
+    margin-bottom: 150px;
+    background: #ffffff;
+}
+
+.collection-items p {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+}
+
+/*new models*/
+.models .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-models {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #212121;
+    text-align: center;
+    margin-bottom: 103px;
+}
+
+.new-models .button a {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+}
+
+.models .button {
+    margin-top: 103px;
+}
+
+.models .dress img {
+    display: flex;
+    margin: 0 auto;
+}
+
+.dress-item {
+    position: relative;
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+}
+
+.card-background {
+    position: absolute;
+}
+
+.dress {
+    position: relative;
+}
+
+.dress, .models a:hover {
+    color: #D7B399;
+    transition: .2s;
+}
+
+.dress-price {
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #D7B399;
+    margin-top: 15px;
+}
+
+.new img {
+    border: 3px solid #D7B399;
+    width: 25px;
+    height: 0;
+}
+
+.dress span {
+    position: absolute;
+    border: 3px solid #D7B399;
+    width: 25px;
+    height: 0;
+}
+
+.dress .right {
+    position: relative;
+    bottom: 130px;
+}
+
+.dress span:before {
+    content: "";
+    position: absolute;
+    border: 3px solid #D7B399;
+    width: 25px;
+    height: 0;
+    left: 220px;
+}
+
+/*presents*/
+
+.presents {
+    width: 100%;
+    height: 180px;
+    left: 0;
+    top: 2707px;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+.presents h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-right: 60px;
+}
+
+input {
+    background: #F9F6F1;
+    width: 255px;
+    height: 40px;
+    padding-left: 20px;
+    margin-right: 35px;
+}
+
+.presents .button {
+    width: 185px;
+    height: 40px;
+}
+
+.presents .button a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*footer*/
+
+.footer-menu-logo {
+    display: flex;
+    justify-content: space-evenly;
+    background: #212121;
+    margin-top: 150px;
+    padding: 79px 0;
+}
+
+.footer-menu-logo a:hover {
+    filter: sepia(100%);
+    transition: .2s;
+}
+
+.footer-logo-item img {
+    width: 201px;
+    height: 40px;
+}
+
+.footer-menu-logo p {
+    line-height: 22px;
+    color: #FFFFFF;
+    width: 200px;
+    margin-top: 39px;
+    font-size: 14px;
+}
+
+.footer-menu-logo h1 {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-menu-logo a {
+    font-size: 14px;
+    color: #CBCFD4;
+    line-height: 35px;
+}
+
+
+/*copyright*/
+
+.copyright {
+    background: #E5E5E5;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 -210px;
+}
+
+.copyright p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #212121;
+    margin-top: 30px;
+}
