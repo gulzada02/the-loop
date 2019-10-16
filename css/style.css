@@ -24,6 +24,7 @@ header {
 .header-slider {
     margin-top: 172px;
 }
+
 .header-top {
     padding-top: 56px;
 }
@@ -39,6 +40,7 @@ header {
 .menu-logo img {
     width: 201px;
 }
+
 .left-menu li {
     margin-right: 45px;
 }
@@ -54,12 +56,19 @@ header {
 nav {
     display: flex;
     align-items: center;
+    font-weight: 500;
+    margin-left: -45px;
+}
+
+nav a:hover {
+    color: #D7B399;
+    transition: .3s;
 }
 
 .burger-menu {
     width: 40px;
     height: 40px;
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -108,16 +117,23 @@ nav {
     display: block;
 }
 
+.purchase {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
 
 .purchase-item {
     position: relative;
-    background: #D7B399;
-    width: 33px;
-    height: 15px;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: 12px;
     text-align: center;
+    display: block;
+    color: #fff;
+    background: #d7b399;
+    width: 33px;
+    height: 16px;
+    font-size: 12px;
+    font-weight: 700;
+    left: 20px;
 }
 
 .purchase-item:before {
@@ -127,25 +143,10 @@ nav {
     height: 0;
     top: 0;
     border-style: solid;
-    border-width: 8.5px 13.7px 6.5px 0;
+    border-width: 9.5px 15.7px 6.5px 0;
     border-color: transparent #D7B399 transparent transparent;
     right: 33px;
 }
-
-/*.figure:before {*/
-/*    content: "";*/
-/*    position: relative;*/
-/*    border: 3px solid transparent;*/
-/*    border-top: 5px solid #212121;*/
-/*    left: 107px;*/
-/*    top: 10px;*/
-/*}*/
-
-/*.main-logo {*/
-/*    text-transform: uppercase;*/
-/*    font-weight: bold;*/
-/*    font-size: 24px;*/
-/*}*/
 
 #section-slider {
     padding: 150px 0;
@@ -186,11 +187,13 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #FFFFFF;
 }
 
 .button:hover {
-    filter: sepia(50%);
+    background: #ebc8a0;
     transition: .2s;
+    color: #FFFFFF;
 }
 
 .button a {
@@ -261,9 +264,35 @@ nav {
     color: #FFFFFF;
 }
 
-/*collection*/
-#collection {
+.collection_wrap {
+    position: relative;
+}
+
+/*!*collection*!*/
+.collection {
+    z-index: 2;
+    position: relative;
+}
+
+.collection_wrap:before {
+    content: '';
     background: #F9F6F1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.collection_wrap:after {
+    content: '';
+    background: #F4F4F4;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    top: 0;
+
 }
 
 .collection h3 {
@@ -286,6 +315,7 @@ nav {
     margin-top: 25px;
 }
 
+
 .collection-image {
     float: right;
 }
@@ -297,13 +327,11 @@ nav {
 .collection .button {
     width: 80px;
     height: 30px;
-    background: #D7B399;
     margin-top: 40px;
 }
 
 .collection-items {
     margin-bottom: 150px;
-    background: #ffffff;
 }
 
 .collection-items p {
@@ -357,18 +385,58 @@ nav {
     line-height: 17px;
     text-align: center;
     color: #000000;
+    margin-top: 25px;
 }
 
-.card-background {
+.col-items img {
+    width: 100%;
+}
+
+.col-items:before {
+    content: '';
+    border-left: 3px solid #D7B399;
+    border-top: 3px solid #D7B399;
     position: absolute;
+    height: 25px;
+    top: -25px;
+    width: 25px;
+    left: 11px;
 }
 
-.dress {
-    position: relative;
+.col-items:after {
+    content: '';
+    position: absolute;
+    border-right: 3px solid #D7B399;
+    border-top: 3px solid #D7B399;
+    height: 25px;
+    width: 25px;
+    top: -25px;
+    right: 11px;
 }
 
-.dress, .models a:hover {
-    color: #D7B399;
+.col-items span:first-child:before {
+    content: '';
+    position: absolute;
+    border-left: 3px solid #D7B399;
+    border-bottom: 3px solid #D7B399;
+    height: 25px;
+    width: 25px;
+    bottom: -25px;
+    left: 11px;
+}
+
+.col-items span:first-child:after {
+    content: '';
+    position: absolute;
+    border-right: 3px solid #D7B399;
+    border-bottom: 3px solid #D7B399;
+    height: 25px;
+    width: 25px;
+    bottom: -25px;
+    right: 11px;
+}
+
+.col-items, .models a:hover {
     transition: .2s;
 }
 
@@ -440,6 +508,7 @@ input {
     height: 40px;
     padding-left: 20px;
     margin-right: 35px;
+    border: none;
 }
 
 .presents .button {
@@ -500,17 +569,18 @@ input {
 
 
 /*copyright*/
+#section-copyright {
+    background: #E5E5E5;
+}
 
 .copyright {
-    background: #E5E5E5;
     display: flex;
-    justify-content: space-around;
-    margin: 0 -210px;
+    justify-content: space-between;
+    padding-top: 25px;
 }
 
 .copyright p {
     font-size: 14px;
     line-height: 22px;
     color: #212121;
-    margin-top: 30px;
 }
