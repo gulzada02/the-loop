@@ -3,17 +3,64 @@
         display: none;
     }
 
-    .collection-image img {
-        margin: 0 0 0 0;
-    }
     .models .row {
         display: grid;
     }
+
     .presents {
         display: inline-grid;
         justify-content: end;
     }
+
     .footer-menu-logo {
         display: grid;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .left-menu, .right-menu {
+        display: none;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .right-menu li a, .left-menu li a {
+        padding: 10px 5px;
+        color: #fff;
+    }
+
+    .right-menu {
+        top: 172px;
+    }
+
+    .left-menu li, .right-menu li {
+        background: black;
+        margin: 0;
+
+    }
+
+    .collection {
+        z-index: 2;
+        position: relative;
+        text-align: center;
+    }
+
+    .collection .button {
+        width: 80px;
+        height: 30px;
+        margin: 0 auto;
+    }
+
+    .collection-image img {
+        margin: 25px 160px 0;
+    }
+
+    .collection-items {
+        margin: 0 160px 30px;
     }
 }
