@@ -41,6 +41,10 @@ header {
     width: 201px;
 }
 
+.left-menu {
+    padding-left: 0;
+}
+
 .left-menu li {
     margin-right: 45px;
 }
@@ -57,7 +61,6 @@ nav {
     display: flex;
     align-items: center;
     font-weight: 500;
-    margin-left: -45px;
 }
 
 nav a:hover {
@@ -66,8 +69,6 @@ nav a:hover {
 }
 
 .burger-menu {
-    width: 40px;
-    height: 40px;
     display: none;
     align-items: center;
 }
@@ -436,8 +437,13 @@ nav a:hover {
     right: 11px;
 }
 
+.col-items:hover {
+    transform: scale(1.3);
+}
+
 .col-items, .models a:hover {
     transition: .2s;
+    color: #d7b398;
 }
 
 .dress-price {
