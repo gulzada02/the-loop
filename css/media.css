@@ -79,6 +79,9 @@
     .slide .text-right {
         display: block;
     }
+    
+    .slide img {
+        marging: 0;
 
     .owl-dots {
         margin: 0;
