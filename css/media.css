@@ -18,6 +18,8 @@
 
     .burger-menu {
         display: flex;
+        width: 40px;
+        height: 40px;
     }
 
     .left-menu, .right-menu {
@@ -62,5 +64,43 @@
 
     .collection-items {
         margin: 0 160px 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #section-slider {
+        padding: 2px 0;
+    }
+
+    .slide .col-lg-6 {
+        display: contents;
+    }
+
+    .slide .text-right {
+        display: block;
+    }
+
+    .owl-dots {
+        margin: 0;
+    }
+
+    .collection-image img {
+        margin: 25px 120px;
+    }
+    .collection-items {
+        margin: 0 80px;
+    }
+
+    .models h1 {
+        margin-top: 30px;
+    }
+
+    .presents {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .copyright {
+        display: contents;
     }
 }
