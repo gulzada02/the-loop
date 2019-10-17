@@ -67,6 +67,15 @@
     }
 }
 
+@media (min-width: 768px) {
+    .collection-items {
+        margin: 0;
+    }
+    .collection-items .col-3 {
+        display: inline-table;
+    }
+
+}
 @media (max-width: 575.98px) {
     #section-slider {
         padding: 2px 0;
