@@ -205,7 +205,10 @@ nav a:hover {
     margin: 0 25px;
 }
 
-
+.button a:hover {
+    color: #FFFFFF;
+    transition: .2s;
+}
 .first-price {
     font-weight: bold;
     font-size: 24px;
